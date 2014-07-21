@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<!-- META -->
+<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		
+<!-- jQuery library (served from Google) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- MagicWall Javascript file -->
+<script src="jquery.magicwall.min.js"></script>
+
+<!-- MagicWall CSS file -->
+<link href="magicwall.min.css" rel="stylesheet" />
+<!-- STYLES -->
+
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Alfa+Slab+One" rel="stylesheet" type="text/css" />
+		<link href="colorbox/colorbox.css" rel="stylesheet" />
+		<link href="../magicwall.min.css" rel="stylesheet" />
+		<link href="demo.css" rel="stylesheet" />
+
+		<style type="text/css">
+			.magicwall{
+				width: 1920px;
+				height: 1080px;
+			}
+			
+			.magicwall li a.colorbox{
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 9;
+				-webkit-transition: all 150ms ease-out;
+				-moz-transition: all 150ms ease-out;
+				transition: all 150ms ease-out;
+			}
+			
+			.magicwall li a.colorbox:hover{
+				opacity: 0.5;
+				background: #ef4135;
+			}
+			
+			.magicwall li a.colorbox:focus{
+				outline: none;
+			}
+			
+		</style>
+	</head>
+<body>
+
+<div id="demo" class="magicwall">
+<ul class="magicwall-grid">
+<li data-thumb="../images/0.jpg">
+	<a href="../images/0.jpg" class="colorbox" rel="magicwall"></a>
+	</li>
+<li data-thumb="../images/1.jpg">
+	<a href="../images/1.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/2.jpg">
+	<a href="../images/2.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/3.jpg">
+	<a href="../images/3.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/4.jpg">
+	<a href="../images/5.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/5.jpg">
+	<a href="../images/5.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/6.jpg">
+	<a href="../images/6.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/7.jpg">
+	<a href="../images/7.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/8.jpg">
+	<a href="../images/8.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/9.jpg">
+	<a href="../images/9.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/10.jpg">
+	<a href="../images/10.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/11.jpg">
+	<a href="../images/11.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/12.jpg">
+	<a href="../images/12.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/13.jpg">
+	<a href="../images/13.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/14.jpg">	
+	<a href="../images/14.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/15.jpg">
+	<a href="../images/15.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/16.jpg">
+	<a href="../images/16.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/17.jpg">
+	<a href="../images/17.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/18.jpg">
+	<a href="../images/18.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/19.jpg">
+	<a href="../images/19.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/20.jpg">
+	<a href="../images/20.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/21.jpg">
+	<a href="../images/21.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/22.jpg">
+	<a href="../images/22.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/23.jpg">
+	<a href="../images/23.jpg" class="colorbox" rel="magicwall"></a></li>
+<li data-thumb="../images/24.jpg">
+	<a href="../images/24.jpg" class="colorbox" rel="magicwall"></a></li>
+
+					</ul>
+				</div><!-- .magicwall -->
+			</div>
+			
+		</div><!-- #main-wrap -->
+		
+	<!-- SCRIPTS -->
+		<script type="text/javascript" src="../jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="../jquery.easing.min.js"></script>
+		<script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="../jquery.magicwall.min.js"></script>
+		<script type="text/javascript">
+			$(".magicwall").magicWall({
+				maxItemWidth: 320,
+				maxItemHeight: 270,
+				delay: 300,
+				animations: "flipX,flipY,rollOutX,-rollOutX,rollOutY,-rollOutY,slideX,-slideX,slideY,-slideY",
+				flipXDuration: 1200,
+				flipXEasing: "easeInOutBack",
+				flipYDuration: 1200,
+				flipYEasing: "easeInOutBack",
+				rollOutXDuration: 800,
+				rollOutXEasing: "easeOutBounce",
+				rollOutYDuration: 800,
+				rollOutYEasing: "easeOutBounce",
+				slideXDuration: 1500,
+				slideXEasing: "easeInOutBack",
+				slideYDuration: 1500,
+				slideYEasing: "easeInOutBack"
+				
+			});
+			
+		</script>
+	</body>
+</html>
