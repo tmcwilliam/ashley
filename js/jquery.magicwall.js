@@ -704,7 +704,7 @@
 			
 			/* get random items */
 			if(indexA === undefined) indexA = g.eq(Math.floor(Math.random()*g.length)).attr("data-index");
-			if(indexB === undefined) indexB = h.eq(Math.floor(Math.random()*h.length)).attr("data-index");
+			if(!indexB) indexB = h.eq(Math.floor(Math.random()*h.length)).attr("data-index");
 			
 			/* do switch */
 			objB = t.getItemObject(t.getItem(indexB));
@@ -806,7 +806,16 @@
 				break;
 				
 				/* ------------------------------------------------------------------------------------------- */
-				
+
+				case "waterfall":
+					t.swapItems(objA, objB);
+					
+					objA.elem.style.transition = 'all 1s ease-out';
+					objA.elem.style.transform = 'rotateX(180deg)';
+				break;
+
+				/* ------------------------------------------------------------------------------------------- */
+
 				case "rollIn":
 					itemA.css("z-index", 9998);
 					itemB.css("z-index", 9999);
