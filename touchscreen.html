@@ -2,163 +2,38 @@
 <html lang="en">
 <head>
 	<!-- META -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		
 	<!-- TITLE -->
-		<title>Ashley animated responsive image grid</title>
+	<title>Ashley animated responsive image grid</title>
 
 	<!-- STYLES -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Alfa+Slab+One" rel="stylesheet" type="text/css" />
-		<link href="colorbox/colorbox.css" rel="stylesheet" />
-		<link href="magicwall.min.css" rel="stylesheet" />
-		<link href="demo.css" rel="stylesheet" />
-		<link href="ashley-touchscreen.css" rel="stylesheet" />
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-
-		<link rel="stylesheet" type="text/css" href="js/lightbox/themes/default/jquery.lightbox.css" />
-		<!--[if IE 6]>
-		<link rel="stylesheet" type="text/css" href="js/lightbox/themes/default/jquery.lightbox.ie6.css" />
-		<![endif]-->
-		<script type="text/javascript" src="js/lightbox/jquery.lightbox.min.js"></script>
-
-		<style type="text/css">
-			.magicwall{
-				width: 1920px;
-				height: 1080px;
-			}
-			
-			.magicwall li a.colorbox{
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: 9;
-				-webkit-transition: all 150ms ease-out;
-				-moz-transition: all 150ms ease-out;
-				transition: all 150ms ease-out;
-			}
-			
-			.magicwall li a.colorbox:hover{
-				opacity: 0.5;
-				background: #000000;
-			}
-			
-			.magicwall li a.colorbox:focus{
-				outline: none;
-			}
-			
-			.magicwall li a{
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: 9;
-			}
-			
-		</style>
-		<link href="ashley-touchscreen.css" rel="stylesheet" type="text/css">
-  <script src="http://jwpsrv.com/library/DjXByArsEeS2pyIACtqXBA.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Alfa+Slab+One" rel="stylesheet" type="text/css" />
+	<link href="styles/colorbox.css" rel="stylesheet" />
+	<link href="styles/magicwall.min.css" rel="stylesheet" />
+	<link href="styles/demo.css" rel="stylesheet" />
+	<link href="styles/ashley-touchscreen.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="js/lightbox/themes/default/jquery.lightbox.css" />
+	<link href="styles/ashley-touchscreen.css" rel="stylesheet" type="text/css">
+	
+	<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="js/lightbox/themes/default/jquery.lightbox.ie6.css" />
+	<![endif]-->
+  
 	</head>
 	<body>
-			<div id="demo" class="magicwall">
-				<ul class="magicwall-grid">
-                	<li data-thumb="images/00_Ashley-logo.jpg" ><a href="index.html" target="_self" ></a>
-					</li>
-					<li data-thumb="images/01-Modern-Brown-Sofa.jpg" >
-						<a href="http://www.ashley.pulsestudio.com/videos/01-Modern-Brown-Sofa-Fb.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720&image="images/01-Modern-Brown-Sofa.jpg" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/02A-B582-Sleek-Brown-Bedroom.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/02A-B582-Sleek-Brown-Bedroom-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/03-Moody-Dining.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/03-Moody-Dining-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/04-Uph-Blue-Sofa.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/04-Uph-Blue-Sofa-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/05-Corson-Mocha-Sofa.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/05-Corson-Mocha-Sofa-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/06-Large-French-Country-Table.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/06-Large-French-Country-Table-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/08-Coutmeyers-Amber-Stationary.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/08-Coutmeyers-Amber-Stationary-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/09-Arrieta.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/09-Arrieta-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/10-Navosta-Charc.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/10-Navosta-Charc-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/11-Kaylor-Taupe.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/11-Kaylor-Taupe-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/12-Kaylor-Quarry.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/12-Kaylor-Quarry-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/13-Kaylor-Orange.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/13-Kaylor-Orange-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/14-Ashley-876-Orrin-Sand.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/14-Ashley-876-Orrin-Sand-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					</li>
-					<li data-thumb="images/15-Corson-Copper-Sofa.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/15-Corson-Copper-Sofa-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/16-Corson-Green-Sofa.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/16-Corson-Green-Sofa-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/17-Modern-Dining-Table-Not-Set_1.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/17-Modern-Dining-Table-Not-Set-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/18-Combo-Living-Dining.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/18-Combo-Living-Dining-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/19-Studio-Product-Shots-SPRING.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/19-Studio-Product-Shots-SPRING-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-                    <li data-thumb="images/20-Studio-Product-Shots-GENERIC.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/20-Studio-Product-Shots-GENERIC-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-                    <li data-thumb="images/21-Studio-Product-Shots-FALL.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/21-Studio-Product-Shots-FALL-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-                    <li data-thumb="images/22-SPS-SPRING_1.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/22-SPS-SPRING-F.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-                    <li data-thumb="images/23-SPS-Generic-Brown-Sleigh-Bed.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/23-SPS-Generic-Brown-Sleigh-Bed-F-A.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-                    <li data-thumb="images/24-Mixed-Set-Window-Bed_1.jpg">
-						<a href="http://www.ashley.pulsestudio.com/videos/24-Mixed-Set-Window-Bed-F-A.mp4?lightbox[force]=jwplayer&lightbox[width]=1280&lightbox[height]=720" class="lightbox" ></a>
-					<li data-thumb="images/00_Ashley-logo.jpg"> <a href="index.html" target="_self" ></a>
-					</li>
-				</ul>
-			</div><!-- .magicwall -->
-			<section class="section demo-code">
-	<!-- SCRIPTS -->
-		        <script type="text/javascript">
- 				 jQuery(document).ready(function($){
-  				  $('.lightbox').lightbox();
-				  });
-</script>		
-		<script type="text/javascript" src="jquery.1.9.1.min.js"></script>
-		<script type="text/javascript" src="jquery.easing.min.js"></script>
-		<script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
-		<script type="text/javascript" src="jquery.magicwall.min.js"></script>
+		<div id="demo" class="magicwall">
+			<ul id="photo-grid" class="magicwall-grid"></ul>
+		</div>
 
-		<script type="text/javascript">
-			$("#demo").magicWall({
-				maxItemWidth: 384,
-				maxItemHeight: 270,
-				delay: 1500,
-				pauseOnHover: true
-			});
-			
-			$(".colorbox").colorbox({
-				onOpen: function(){
-					$(".magicwall").magicWall("stop");
-				},
-				
-				onClosed: function(){
-					$(".magicwall").magicWall("start");
-				}
-			});
-		</script>
-               
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script src="http://jwpsrv.com/library/DjXByArsEeS2pyIACtqXBA.js"></script>
+		<script type="text/javascript" src="js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="js/jquery.magicwall.min.js"></script>
+		<script type="text/javascript" src="js/lodash.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

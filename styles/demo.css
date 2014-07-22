@@ -308,3 +308,40 @@ a{
 	left: 0;
 	background: url(../images/shadow.png) 0 bottom no-repeat;
 }
+
+.magicwall{
+	width: 1920px;
+	height: 1080px;
+}
+
+.magicwall li a.colorbox{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+}
+
+.magicwall li a.colorbox:hover{
+	opacity: 0.5;
+	background: #000000;
+}
+
+.magicwall li a.colorbox:focus{
+	outline: none;
+}
+
+.magicwall li a{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
