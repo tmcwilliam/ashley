@@ -1367,15 +1367,12 @@
 			t.elem.addClass(selectors.loading.slice(1));
 
 			img.onload = function(){
-				t.content
+				t.content.find('a')
 				.append(
 					$("<div/>")
 					.addClass(selectors.thumb.slice(1))
 					.css({
 						"background-image": "url(" + (src + (t.base.options.useCache ? "" : "?sid=" + Math.floor(Math.random()*9E10))) + ")",
-						"background-position": "center center",
-						"background-repeat": "no-repeat",
-						"background-size": t.base.options.thumbSizing
 					})
 					.fadeTo(0, 0)
 					.fadeTo(300, 1)

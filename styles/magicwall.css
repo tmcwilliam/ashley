@@ -42,7 +42,9 @@
       .magicwall .magicwall-grid > li > .magicwall-wrap {
         display: inline-block;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        position: absolute; 
+        -webkit-transform-style: preserve-3d}
         .magicwall .magicwall-grid > li > .magicwall-wrap > .magicwall-thumb {
           display: block;
           width: 100%;
@@ -69,3 +71,27 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         border-radius: 50%; }
+
+
+.te-front, 
+.te-back { 
+  -webkit-backface-visibility: hidden; 
+}
+
+.te-back { 
+  -webkit-transform: rotate3d(1,0,0,-180deg);
+}
+
+
+/***************** Flip1 ********************/
+.te-flip1.te-show .te-card{
+  -webkit-animation: flip1 1s ease-in-out forwards;
+}
+@-webkit-keyframes flip1{
+  0% { 
+    -webkit-transform: rotate3d(1,0,0,0);
+  }
+  100% { 
+    -webkit-transform: rotate3d(1,0,0,-180deg); 
+  }
+}

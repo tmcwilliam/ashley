@@ -1,0 +1,204 @@
+.magicwall-thumb {
+	opacity: 1; 
+	display: block; 
+	background-size: cover; 
+	background-position: 50% 50%; 
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.tt-grid {
+	position: relative;
+}
+
+.tt-grid:before,
+.tt-grid:after {
+	display: table;
+	content: ' ';
+}
+
+.tt-grid:after {
+	clear: both;
+}
+
+.tt-grid li {
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tt-grid li .magicwall-wrap,
+.tt-grid li .magicwall-wrap .magicwall-thumb {
+	display: block;
+	margin: 0 auto;
+	border: none;
+}
+
+.tt-grid li .magicwall-wrap {
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tt-grid li .magicwall-wrap:nth-child(2) {
+	z-index: 1;
+	visibility: hidden;
+}
+
+.tt-grid.tt-effect-active li .magicwall-wrap {
+	pointer-events: none;
+}
+
+/* Individual grid effects */
+
+/* Fall down / scale up */
+.tt-effect-fall.tt-effect-active li:not(.tt-empty) .magicwall-thumb:first-child {
+	-webkit-animation: fallDown 0.4s forwards;
+	animation: fallDown 0.4s forwards;
+}
+
+.tt-effect-fall.tt-effect-active li .magicwall-thumb:nth-child(2),
+.tt-effect-fall.tt-effect-active li.tt-empty .magicwall-thumb {
+	opacity: 0;
+	-webkit-animation: scaleUpFadeIn 0.4s forwards;
+	animation: scaleUpFadeIn 0.4s forwards;
+}
+
+/* Animations */
+@-webkit-keyframes fallDown { 
+	to { opacity: 0; -webkit-transform: translateY(70%); }
+}
+
+@keyframes fallDown { 
+	to { opacity: 0; transform: translateY(70%); }
+}
+
+@-webkit-keyframes scaleUpFadeIn { 
+	from { opacity: 0; -webkit-transform: scale(0.8); }
+	to { visibility: visible; opacity: 1; -webkit-transform: scale(1); }
+}
+
+@keyframes scaleUpFadeIn { 
+	from { opacity: 0; transform: scale(0.8); }
+	to { visibility: visible; opacity: 1; transform: scale(1); }
+}
+
+/* Animation delays */
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(2) .magicwall-thumb {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(3) .magicwall-thumb {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(4) .magicwall-thumb {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(5) .magicwall-thumb {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(6) .magicwall-thumb {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(7) .magicwall-thumb {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(8) .magicwall-thumb {
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(9) .magicwall-thumb {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(10) .magicwall-thumb {
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(11) .magicwall-thumb {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(12) .magicwall-thumb {
+	-webkit-animation-delay: 1.1s;
+	animation-delay: 1.1s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(13) .magicwall-thumb {
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(14) .magicwall-thumb {
+	-webkit-animation-delay: 1.3s;
+	animation-delay: 1.3s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(15) .magicwall-thumb {
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(16) .magicwall-thumb {
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(17) .magicwall-thumb {
+	-webkit-animation-delay: 1.6s;
+	animation-delay: 1.6s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(18) .magicwall-thumb {
+	-webkit-animation-delay: 1.7s;
+	animation-delay: 1.7s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(19) .magicwall-thumb {
+	-webkit-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(20) .magicwall-thumb {
+	-webkit-animation-delay: 1.9s;
+	animation-delay: 1.9s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(21) .magicwall-thumb {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(22) .magicwall-thumb {
+	-webkit-animation-delay: 2.1s;
+	animation-delay: 2.1s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(23) .magicwall-thumb {
+	-webkit-animation-delay: 2.2s;
+	animation-delay: 2.2s;
+}
+
+.tt-grid-wrapper .tt-effect-delay.tt-effect-active li:nth-child(24) .magicwall-thumb {
+	-webkit-animation-delay: 2.3s;
+	animation-delay: 2.3s;
+}
