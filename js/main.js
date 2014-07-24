@@ -140,8 +140,8 @@ $(function(){
 	});
 
 	videoLightBox(".voverlay", {
-		opacity: 0.7,
-		color: "#000000",
+		opacity: 0,
+		color: "#ffffff",
 		closeOnComplete: true,
 		volume: 100
 	});
