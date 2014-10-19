@@ -140,7 +140,7 @@ $(function(){
 	});
 
 	videoLightBox(".voverlay", {
-		opacity: 0,
+		opacity: 0.1,
 		color: "#ffffff",
 		closeOnComplete: true,
 		volume: 100
